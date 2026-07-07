@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="form-registro">
+        <h3>REGISTRARSE</h3>
+        <input type="email" id="email-registro" required placeholder="user@gmail.com" > 
+        <input type="password" id="password-registro" required placeholder="**********">
+        <button type="submit">REGISTRARSE</button>
+        <div id="notificacion-registro"></div>
+    </form> 
+
+    <form id="form-login">
+        <h3>INICIAR SESION</h3>
+        <input type="email" id="email-login" required placeholder="ingresa tu email">
+        <input type="password" id="password-login" required placeholder="******">
+        <button type="submit">INGRESAR</button>
+        <div id="notificacion-login"></div>
+    </form>
+    
+    <div id="zona-sesion">
+        <span id="usuario-activo"></span>
+        <button id="cerrar-sesion"> Cerrar Sesion</button>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
